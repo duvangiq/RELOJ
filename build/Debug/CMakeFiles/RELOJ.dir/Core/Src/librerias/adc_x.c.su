@@ -1,0 +1,4 @@
+C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/adc_x.c:16:10:ADC_Read	8	static
+C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/adc_x.c:24:6:ADC_Read_All	24	static
+C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/adc_x.c:38:6:ADC_Read_DMA	8	static
+C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/adc_x.c:47:6:HAL_ADC_ConvCpltCallback	0	static

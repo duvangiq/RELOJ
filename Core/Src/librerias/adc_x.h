@@ -1,0 +1,56 @@
+/*
+ * adc.h
+ *
+ *  Created on: 01/08/2026
+ *      Author: Alcides Ramos
+ */
+
+#ifndef LIBRERIAS_ADC_H_
+#define LIBRERIAS_ADC_H_
+
+#include "main.h"
+
+//habilite los adc a usar
+extern ADC_HandleTypeDef hadc1;
+
+#define adc1_canales  3 //  coloque numero de canales del ADC1 a usar
+
+
+//defina para los adc usado el arreglo para los codigos
+extern uint16_t adc1_codigo[];
+extern uint8_t adc1_flag; //flag de conversion del adc
+
+
+uint16_t ADC_Read(ADC_HandleTypeDef  *adc_n);
+void ADC_Read_All (ADC_HandleTypeDef  *adc_n,uint8_t adc_num,uint16_t *adc_codigo);
+void ADC_Read_DMA (ADC_HandleTypeDef  *adc_n,uint8_t adc_num,uint16_t *adc_codigo);
+
+#endif /* LIBRERIAS_ADC_H_ */
+
+
+//configurar el DMA en modo normal si se usa dma , mas de un canal
+
+//SI SE QUIEREN LEER NAS DE UN CANAL COLOQIE QUE BUFFER U TAMAñO DE CANALES SE QUIEREN LEER
+/*
+ ADC_Read_All(&hadc1, adc1_canales, adc1_codigo);
+*/
+//en el main si usa DMA
+
+  //ADC_Read_DMA(&hadc1, adc1_canales, adc1_codigo);
+
+/*
+en el while principal si usa DMA
+   
+    if(adc1_flag == 1)
+    {
+        adc1_flag = 0;
+       //procesa si desea los datos del adc1
+        sprintf(buffer, "ADC Values: %u, %u, %u, %u\r\n", adc1_codigo[0], adc1_codigo[1], adc1_codigo[2], adc1_codigo[3]);
+        //manda serial si desea
+        uartx_write_text(&huart1, buffer);
+        //activa nueva lectura adc obligatorio
+        ADC_Read_DMA(&hadc1, adc1_canales, adc1_codigo);
+
+    }
+
+*/

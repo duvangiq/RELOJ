@@ -1,0 +1,4 @@
+C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/timer.c:34:6:TIMER_PROCEDIMIENTOS	8	static
+C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/timer.c:18:6:HAL_TIM_PeriodElapsedCallback	8	static
+C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/timer.c:46:6:TIMER_INIT	8	static
+C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/timer.c:53:6:TIMER_MIDE	16	static
