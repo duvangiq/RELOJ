@@ -455,7 +455,7 @@
 				10
 			],
 			"compileGroupIndex" : 0,
-			"path" : "Core/Src/librerias/adc_x.c",
+			"path" : "Core/Src/librerias/delays.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -465,7 +465,7 @@
 				10
 			],
 			"compileGroupIndex" : 0,
-			"path" : "Core/Src/librerias/delays.c",
+			"path" : "Core/Src/librerias/dsp_effects.c",
 			"sourceGroupIndex" : 0
 		},
 		{

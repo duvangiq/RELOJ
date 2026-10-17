@@ -1,6 +1,5 @@
-
 /*
- * timer.h
+ * timer.c
  *
  *  Created on: May 1, 2025
  *      Author: ALCIDES_RAMOS
@@ -8,63 +7,43 @@
 #include "timer.h"
 
 uint32_t pasos1;
-
-
-
 uint32_t tmicros;
 float tmilis;
 
-//LO QUE  SE REALIZA EN EL TIEMPO DE MEUSTTREO
+// Callback de periodo de timer
+// NOTA: Para muestreo de guitarra a 10 kHz, el procesamiento I2C del IMU
+// se realiza en el while(1) principal para no colgar el microcontrolador.
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-	//mira si el timer desead0
-	 if (htim->Instance == TIM_INT)
-	 {
-  	 	   //IMU
-		 TIMER_PROCEDIMIENTOS();
-	 }
-			 /* Prevent unused argument(s) compilation warning */
-		  UNUSED(htim);
-
-		  /* NOTE : This function should not be modified, when the callback is needed,
-		            the HAL_TIM_PeriodElapsedCallback could be implemented in the user file
-		   */
+    UNUSED(htim);
 }
 
 void TIMER_PROCEDIMIENTOS()
 {
-	//COLOQUE LOS PROCEDIMIENTOS  USAR ACORDE  SENSORES
-	         MPU6050_lee_datos();
-	         MPU6050_calcula_flotantes();
-
-	  	     MPU6050_Ace_angulos();
-			  MPU6050_Giro_angulos();
-			  Filtro_Complementario(0.98);
-			  filtro_kalman();
+    // Lectura y filtros del MPU-6050
+    MPU6050_lee_datos();
+    MPU6050_calcula_flotantes();
+    MPU6050_Ace_angulos();
+    MPU6050_Giro_angulos();
+    Filtro_Complementario(0.98f);
+    filtro_kalman();
 }
 
 void TIMER_INIT()
 {
-	HAL_TIM_Base_Start_IT(&htim_INT);
+    // Si se requiere iniciar el timer en modo base (sin interrupción de periodo)
+    HAL_TIM_Base_Start(&htim_INT);
 }
 
-
-//MIDO   TIEMPO DE ESOS PROCEDIEMTOS
+// Medir tiempo de ejecución
 void TIMER_MIDE()
 {
-	CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
-	    DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
-	    pasos1=(HAL_RCC_GetSysClockFreq()/1000000);//le el cristal pasa a us
+    CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
+    DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
+    pasos1 = (HAL_RCC_GetSysClockFreq() / 1000000);
 
-	    // INICIA CONTADOR
-	    	    DWT->CYCCNT=0;
-	    	    TIMER_PROCEDIMIENTOS();
-	    	    tmicros= (DWT->CYCCNT / pasos1);//retrona los us
-                 tmilis=tmicros/1000.0;
+    DWT->CYCCNT = 0;
+    TIMER_PROCEDIMIENTOS();
+    tmicros = (DWT->CYCCNT / pasos1);
+    tmilis = tmicros / 1000.0f;
 }
-
-
-
-
-
-

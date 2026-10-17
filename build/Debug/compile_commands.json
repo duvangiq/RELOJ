@@ -43,15 +43,15 @@
 },
 {
   "directory": "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/build/Debug",
-  "command": "\"C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\14.2 rel1\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias\" -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/cmake/stm32cubemx/../../Core/Inc\" -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc\" -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\" -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include\" -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/cmake/stm32cubemx/../../Drivers/CMSIS/Include\"  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11 -Og -g3 -o CMakeFiles\\RELOJ.dir\\Core\\Src\\librerias\\adc_x.c.obj -c \"C:\\Users\\DUVAN\\Desktop\\stm stuff\\RELOJ\\Core\\Src\\librerias\\adc_x.c\"",
-  "file": "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/adc_x.c",
-  "output": "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/build/Debug/CMakeFiles/RELOJ.dir/Core/Src/librerias/adc_x.c.obj"
-},
-{
-  "directory": "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/build/Debug",
   "command": "\"C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\14.2 rel1\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias\" -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/cmake/stm32cubemx/../../Core/Inc\" -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc\" -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\" -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include\" -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/cmake/stm32cubemx/../../Drivers/CMSIS/Include\"  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11 -Og -g3 -o CMakeFiles\\RELOJ.dir\\Core\\Src\\librerias\\delays.c.obj -c \"C:\\Users\\DUVAN\\Desktop\\stm stuff\\RELOJ\\Core\\Src\\librerias\\delays.c\"",
   "file": "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/delays.c",
   "output": "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/build/Debug/CMakeFiles/RELOJ.dir/Core/Src/librerias/delays.c.obj"
+},
+{
+  "directory": "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/build/Debug",
+  "command": "\"C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\14.2 rel1\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias\" -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/cmake/stm32cubemx/../../Core/Inc\" -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc\" -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\" -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include\" -I\"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/cmake/stm32cubemx/../../Drivers/CMSIS/Include\"  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11 -Og -g3 -o CMakeFiles\\RELOJ.dir\\Core\\Src\\librerias\\dsp_effects.c.obj -c \"C:\\Users\\DUVAN\\Desktop\\stm stuff\\RELOJ\\Core\\Src\\librerias\\dsp_effects.c\"",
+  "file": "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/dsp_effects.c",
+  "output": "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/build/Debug/CMakeFiles/RELOJ.dir/Core/Src/librerias/dsp_effects.c.obj"
 },
 {
   "directory": "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/build/Debug",

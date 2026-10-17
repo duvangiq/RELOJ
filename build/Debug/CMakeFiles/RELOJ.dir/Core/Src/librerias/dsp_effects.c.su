@@ -1,0 +1,4 @@
+C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/dsp_effects.c:19:6:DSP_Init	0	static
+C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/dsp_effects.c:29:6:DSP_SetEffect	0	static
+C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/dsp_effects.c:38:6:DSP_UpdateFromMPU	0	static
+C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/dsp_effects.c:82:6:DSP_ProcessBlock	48	static

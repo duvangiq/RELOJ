@@ -5,8 +5,8 @@
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/*.c")
 set(OLD_GLOB
   "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/MPU6050.c"
-  "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/adc_x.c"
   "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/delays.c"
+  "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/dsp_effects.c"
   "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/kalman.c"
   "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/timer.c"
   "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/uart.c"
@@ -36,8 +36,8 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/*.h")
 set(OLD_GLOB
   "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/MPU6050.h"
-  "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/adc_x.h"
   "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/delays.h"
+  "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/dsp_effects.h"
   "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/kalman.h"
   "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/timer.h"
   "C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/uart.h"

@@ -6,8 +6,8 @@
 			"paths" : 
 			[
 				"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/MPU6050.c",
-				"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/adc_x.c",
 				"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/delays.c",
+				"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/dsp_effects.c",
 				"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/kalman.c",
 				"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/timer.c",
 				"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/uart.c"
@@ -19,8 +19,8 @@
 			"paths" : 
 			[
 				"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/MPU6050.h",
-				"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/adc_x.h",
 				"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/delays.h",
+				"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/dsp_effects.h",
 				"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/kalman.h",
 				"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/timer.h",
 				"C:/Users/DUVAN/Desktop/stm stuff/RELOJ/Core/Src/librerias/uart.h"

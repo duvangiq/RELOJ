@@ -33,14 +33,10 @@ float Kalman_Update(Kalman_f *kalman, float acc_angle, float gyro_rate, float dt
  R_measure: 0.01 – 0.1  //entre mas bajo confio mas en el acelelometro
   */
 
-	// Parámetros del modelo
-    //float Q_angle = 0.008f;  // Ruido del proceso (para el ángulo)
-    //float Q_bias  = 0.003f;  // Ruido del proceso (para el sesgo del gyro)
-    //float R_measure = 0.01f; // Ruido de la medida (del acelerómetro)
-
-	float Q_angle = 0.001f;  // Ruido del proceso (para el ángulo)
-	float Q_bias  = 0.001f;  // Ruido del proceso (para el sesgo del gyro)
-	float R_measure = 0.05f; // Ruido de la medida (del acelerómetro)
+	// Parametros optimizados para reaccion instantanea sin retraso:
+	float Q_angle = 0.008f;  // Mayor rapidez de reaccion ante movimientos
+	float Q_bias  = 0.003f;  // Ajuste rapido de sesgo del giroscopio
+	float R_measure = 0.03f; // Excelente seguimiento dinamico del acelerometro
 
     // Predicción
     float rate = gyro_rate - kalman->bias;
